@@ -1,0 +1,3 @@
+# useParams Hook Returning Empty Object in React Router v6
+
+This repository demonstrates a common error encountered when using the `useParams` hook in React Router v6.  The `useParams` hook is designed to extract parameters from the URL, but it only works correctly when used within a component that's directly nested within a route defined with a path parameter (e.g., `/users/:userId`).  If used outside this context, it returns an empty object, even if parameters are present in the URL.  This example shows both the incorrect and correct usage and offers a solution.
